@@ -1,0 +1,1 @@
+{"version":3,"file":"blocks/reviews/style-script.css","mappings":";;;AAAA;EACE;AACF,C","sources":["webpack://starter-kit-lite/./src/blocks/reviews/style.scss"],"sourcesContent":[".reviews__wrapper-block{\r\n  padding: 0!important;\r\n}"],"names":[],"sourceRoot":""}

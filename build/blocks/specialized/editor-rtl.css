@@ -1,0 +1,73 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/@wordpress/scripts/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/specialized/editor.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************/
+.team__title {
+  margin-bottom: 0.875rem;
+}
+.team__header {
+  max-width: 550px;
+}
+.team__wrapper {
+  gap: 1.5rem;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.team__slider {
+  width: 100%;
+  overflow: visible;
+}
+.team .swiper-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.team__item {
+  border-radius: 0.375rem;
+  overflow: hidden;
+  width: 24%;
+}
+.team__item__img {
+  overflow: hidden;
+  height: 254px;
+}
+.team__item__img img {
+  transition: transform 0.3s ease-out;
+}
+.team__item__info {
+  padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+  position: relative;
+}
+.team__item__info::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  display: block;
+  width: 6px;
+  height: 6px;
+  transform: rotate(-135deg) translateY(-50%);
+  border-top: 2px solid #242529;
+  border-right: 2px solid #242529;
+  transition: all 0.3s ease-out;
+  transform-origin: center;
+}
+.team__item__info h4 {
+  transition: color 0.3s ease-out;
+}
+.team__item__info p {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  transition: color 0.3s ease-out;
+  line-height: 150%;
+}
+.team__pagination {
+  display: none;
+}
+.team__list {
+  display: flex;
+  gap: 0.675rem;
+  flex-wrap: wrap;
+  width: 100%;
+}

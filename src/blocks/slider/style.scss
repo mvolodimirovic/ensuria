@@ -1,0 +1,50 @@
+//----------------------------------------
+// Block - Slider Styles, FRONTEND
+//----------------------------------------
+.ensuria-block-slider{
+  position: relative;
+  margin-block: clamp(3rem, 4vw, 4rem);
+}
+.gallery {
+	overflow: hidden;
+	position: relative;
+	height: max-content;
+  margin: 3rem 0;
+  @media (max-width: 768px){
+    overflow: visible;
+  }
+  @media (max-width: 768px) {
+    margin: 1.5rem 0;
+  }
+  &__item {
+    cursor: grab;
+    height: 0;
+    padding-bottom: 21.1%;
+    border-radius: .375rem;
+    overflow: hidden;
+    position: relative;
+    &.swiper-slide{
+      width: calc(100% / 12 * 4 - 6px);
+      margin-right: 6px;
+    }
+    @media (max-width: 768px) {
+      padding-bottom: 50%;
+    }
+    @media (max-width: 575px) {
+      padding-bottom: 64%;
+    }
+    img {
+      width: 100%;
+      height: 100% !important;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
+  }
+}
+.block-slider{
+  .slider-progress{
+    margin-top: 1.5rem;
+  }
+}

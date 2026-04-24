@@ -1,0 +1,121 @@
+//----------------------------------------
+// Block - Slider Styles, EDITOR
+//----------------------------------------
+.individual--block{
+  padding: 0!important;
+}
+.services{
+  background-color: #E0ECF5;
+  padding-block: 2rem;
+  &.white-section{
+    background-color: #ffffff;
+    margin: 0px;
+  }
+  &__header{
+    width: 100%;
+  }
+  &__title{
+    margin-bottom: 0!important;
+  }
+  &__subtitle{
+    margin-top: .875rem;
+    font-size: 1rem;
+    line-height: 150%;
+  }
+  &__list{
+    width: 100%;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .375rem;
+    align-items: stretch;
+    .white-section &{
+      margin-top: 0px;
+    }
+  }
+  &__item{
+    position: relative;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: .375rem;
+    overflow: hidden;
+    width: calc(100% / 12  * 3 - 4.5px);
+    min-height: 202px;
+    align-items: flex-start;
+    cursor: pointer;
+    .white-section &{
+      background-color: #E0ECF5;
+    }
+    &__icons{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      .icon-wrapper:not(.icon-arrow-right){
+        background-color: #E0ECF5;
+        border-radius: .375rem;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+          object-fit: contain;
+        }
+      }
+      .icon-arrow-right{
+        margin-left: auto;
+        background-color: #F4F4F5;
+        border-radius: 50%;
+        padding: .625rem;
+        transition: background-color .3s ease-out;
+        .white-section &{
+          background-color: #ffffff;
+        }
+        svg{
+          transition: fill .3s ease-out;
+        }
+      }
+    }
+    &:hover{
+      h4,span{
+        color: #242529;    
+      }
+      .icon-arrow-right{
+        svg{
+          fill: #ffffff;
+        }
+      }
+    }
+  }
+}
+.individual{
+  &__list{
+    display: flex;
+    gap: .38rem;
+    width: 100%;
+    margin-top: 2.25rem;
+    flex-wrap: wrap;
+  }
+  &-item{
+    gap:.88rem;
+    min-height: unset;
+    width: calc(20% - 0.31rem);
+    cursor: auto;
+    span{
+      color: #242529;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%;
+    }
+    &:hover{
+      span{
+        color: #242529;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,329 @@
+.article-content {
+	width: 100%;
+  &.contact-content{
+    margin-top: 1.5rem;
+  }
+  &.blog-content{
+    max-width: 650px;
+    margin-inline: auto;
+  }
+  .privacy-content{
+    max-width: 1000px;
+    &> :first-child {
+      margin-top: 0;
+    }
+    &> :last-child {
+      margin-bottom: 0;
+    }
+  }
+  iframe{
+    max-width: 100%;
+    margin: 2rem 0;
+    display: block;
+  } 
+  @include fluid-prop(margin-block, 1.5,3);
+  &__wrapper{
+    display: block;
+    .privacy-content{
+      .price, .clinic, .block-slider, .team, .reviews, .directions, .short-description, .partners, .certificate, .law, .individual,.appointment{
+         margin: 3rem 0;
+        width: calc(100vw - clamp(1rem,16px + 30.08*(min(100vw,1500px) - 575px)/1065,2.88rem) * 2);
+        max-width: calc(1500px - clamp(1rem,16px + 30.08*(min(100vw,1500px) - 575px)/1065,2.88rem) * 2);
+        position: relative;
+        left: 0;
+        @media (max-width:1000px) {
+          width: 100%;
+          max-width: 100%; 
+        }
+      }
+    }
+  }
+  &> :first-child {
+    margin-top: 0;
+  }
+  &> :last-child {
+    margin-bottom: 0;
+  }
+	& * {
+		font-weight: 500;
+		line-height: 150%;
+    &> :first-child {
+      margin-top: 0;
+    }
+    &> :last-child {
+      margin-bottom: 0;
+    }
+	}
+  .wp-block-pullquote{
+    display: flex;
+    flex-direction: column;
+    border-left: 5px solid $creame;
+    padding-left: 1.37rem;
+    gap: 1.12rem;
+    @include fluid-prop(margin-block, 1.125,2.75);
+    @include xs{
+      flex-wrap: wrap;
+    }
+    &:before {
+			display: block;
+			content: '';
+			width: 46px;
+			height: 31px;
+			background-image: url('../img/quotes.svg');
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+      flex-shrink: 0;
+			@include sm {
+				width: 32px;
+				height: 17px;
+			}
+		}
+    blockquote{
+      *{
+        margin: 0;
+      }
+      p{
+        font-size: clamp(1rem,3vw,1.25rem);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        margin-bottom: 1rem;
+      }
+      cite{
+        color: $grafite;
+        font-size: clamp(.875rem,2vw,1rem);
+        font-style: normal;
+        font-weight: 400;
+      }
+    }
+    &:first-child {
+			margin-top: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+  } 
+  .wp-block-file{
+    a{
+      display: none;
+    }
+  }
+  .wp-block-quote{
+    padding-block: clamp(1rem,2vw,1.62rem);
+    padding-inline: clamp(0rem,2vw,1.62rem) ;
+    border-top: 1px solid $grafite;
+    border-bottom: 1px solid $grafite;
+    margin: 1.125rem 0 ;
+    p{
+      color: $grafite;
+      text-align: center;
+      font-size: clamp(.87rem,2vw,1rem);;
+      font-weight: 500;
+    }
+    &:first-child {
+			margin-top: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+  }
+	strong {
+		font-weight: 600;
+	}
+
+	p,time{
+		word-break: break-word;
+		color: $grafite;
+		font-size:1rem;
+		@include fluid-prop(margin-block, 1,1.25);
+	}
+
+	a {
+		@include fluid-prop(font-size, .875,1);
+		display: inline;
+		color: $grafite;
+		transition: color .3s ease-in-out;
+		text-decoration: underline;
+    text-underline-position: under;
+    font-weight: 600;
+    *{
+		  color: $grafite;
+		  transition: color .3s ease-in-out;
+      &:hover:not(.btn),
+      &:active:not(.btn) {
+        color: $ironside;
+      }
+    }
+		&:hover:not(.btn),
+		&:active:not(.btn) {
+			color: $ironside;
+		}
+	}
+	img:not(article img) {
+		max-width: 100%;
+		height: auto;
+    border-radius: .75rem;
+    overflow: hidden;
+  }
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-weight: 600;
+		color: $grafite;
+		@include fluid-prop(margin-block, 1,1.25);
+    a {
+      display: inline;
+      color: $grafite;
+      transition: all .3s ease-in-out;
+      text-decoration: underline;
+      font-weight: 500;
+      font-size: inherit;
+      &:hover,
+      &:active {
+        color: $ironside;
+      }
+    }
+	}
+	h1{
+		@include fluid-prop(margin-block, 1.5,2.75);
+  }
+  h3,
+	h4,
+	h5,
+	h6{
+		@include fluid-prop(margin-block, 1,1.5);
+  }
+      ul,
+      ol {
+        margin-right: 0;
+        li {
+          font-size:1rem;
+          margin-block:.28rem;
+          position: relative;
+          color: $grafite;
+          line-height: 150%;
+          &:first-child {
+            margin-top: 0;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          &>ol,
+          ul {
+            &:first-child {
+              padding-top: .625rem;
+            }
+          } 
+        }
+      }
+      ol{
+        margin-left: 1.125rem;
+      }
+      ul {
+        list-style: none;
+        padding-left: .8rem;
+        li {
+          padding-left: .8rem;
+          line-height: 153%;
+          &:before {
+            display: block;
+            content: "";
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: $grafite;
+            position: absolute;
+            top: 10px;
+            left: 0;
+          }
+        }
+      }
+  .wp-block-group{
+    margin: 2.25rem 0;
+    h1,h2,h3,h4,h5,h6{
+      margin: 0px;
+    }
+    p{
+      margin: 1rem 0;
+    }
+    .wp-block-list{
+      margin-top: 1.5rem;
+    }
+  }
+	figure {
+		@include fluid-prop(margin-bottom, 1.5,2.25);
+		overflow: hidden;
+		img {
+			display: block;
+			height: auto;
+			border-radius: .5rem;
+		}
+
+		figcaption {
+			font-size: .875rem;
+			margin-top: 1rem;
+			color: $grafite_30;
+		}
+	}
+
+	.wp-block-embed-youtube {
+		width: 100%;
+    max-width: 100%;
+		@include fluid-prop(margin-bottom, 1.5,2.25);
+
+		.wp-block-embed__wrapper {
+			position: relative;
+			width: 100%;
+			height: 0;
+			padding-bottom: 56.746%;
+			overflow: hidden;
+			border-radius: .5rem;
+
+			iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+
+	.wp-block-table {
+		overflow-x: auto;
+	}
+
+	.wp-block-gallery {
+		.blocks-gallery-grid {
+			margin: 0;
+
+			.blocks-gallery-item {
+				padding: 0;
+				margin-bottom: 1em;
+
+				&:after,
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
+  iframe{
+    max-width: 100%;
+    margin: 0 auto;
+    @include fluid-prop(margin-block, 1.5,2.25);
+    display: block;
+  } 
+  strong,b{
+    font-weight: 600;
+  }
+}

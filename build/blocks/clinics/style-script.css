@@ -1,0 +1,90 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/@wordpress/scripts/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/clinics/style.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+.clinic__title {
+  margin-bottom: 0.875rem;
+}
+.clinic__title h2 {
+  margin: 0 !important;
+}
+.clinic__wrapper {
+  justify-content: space-between;
+  gap: 0px;
+}
+.clinic__wrapper-block {
+  padding: 0 !important;
+}
+.clinic__slider {
+  width: 100%;
+  overflow: visible;
+  margin-top: 1.5rem !important;
+  overflow: hidden;
+}
+.clinic__slider.has-subtitle {
+  margin-top: clamp(1.5rem, 24px + 20 * (min(100vw, 1500px) - 767px) / 733, 2.75rem) !important;
+}
+.clinic__slider:hover .clinic__pagination {
+  opacity: 1;
+}
+.clinic__item {
+  border-radius: 0.375rem;
+  overflow: hidden;
+}
+.clinic__item__img {
+  overflow: hidden;
+}
+.clinic__item__img img {
+  transition: transform 0.3s ease-out;
+  border-radius: 0.375rem 0.375rem 0 0 !important;
+  width: 100%;
+  aspect-ratio: 464/277;
+}
+.clinic__item:hover img {
+  transform: scale(1.1);
+}
+.clinic__item__info {
+  padding: 1.5rem 2.5rem 1.5rem 1.5rem;
+  position: relative;
+  background-color: #F5F6F7;
+  display: flex;
+  gap: 0.375rem;
+  flex-direction: column;
+}
+.clinic__item__info .icon-wrapper {
+  width: 152px;
+  height: 15px;
+}
+.clinic__item__info h4 {
+  transition: color 0.3s ease-out;
+  margin: 0;
+  font-size: 1.25rem;
+}
+.clinic__item__info .clinic__phone {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 4;
+}
+.clinic__item__info button {
+  margin-top: auto;
+  position: relative;
+  z-index: 4;
+}
+.clinic-progress {
+  margin-top: 1.5rem;
+}
+.clinic-progress.has-subtitle {
+  margin-top: clamp(1.5rem, 24px + 20 * (min(100vw, 1500px) - 767px) / 733, 2.75rem);
+}
+.clinic__list {
+  display: flex;
+  gap: 0.675rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.article-content .clinic__wrapper {
+  padding: 0 !important;
+}
+
+/*# sourceMappingURL=style-script.css.map*/

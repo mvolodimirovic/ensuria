@@ -1,0 +1,53 @@
+//----------------------------------------
+// Block - Slider Styles, EDITOR
+//----------------------------------------
+
+.partners{
+  &__wrapper{
+    flex-wrap: nowrap;
+    gap: .375rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+  &__description{
+    background-color: #F0F6FA;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+    font-size: 1rem;
+    line-height: 140%;
+    flex-shrink: 0;
+    border: 1px solid #EEF1F1;
+    width: calc(100% / 12 * 5 - 3px);
+    font-weight: 600;
+    border-radius: .375rem;
+    h2{
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      line-height: 130%;
+    }
+    a{
+      margin-top: 1.5rem;
+    }
+  }
+  &__list{
+    flex-shrink: 0;
+    display: flex;
+    gap: .875rem;
+    column-gap: .5rem;
+    padding-inline: 2rem;
+    padding-block: 2.5rem;
+    background-color: #FAF5F1;
+    border: 1px solid #EEF1F1;
+    width: 48%;
+    flex-wrap: wrap;
+    border-radius: .375rem;
+    justify-content: space-between;
+  }
+  &__item{
+    width: calc(100% / 12 * 3 - 12.5px);
+    img{
+      object-fit: contain;
+    }
+  }
+}

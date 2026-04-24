@@ -1,0 +1,57 @@
+.partners{
+  &__wrapper{
+    flex-wrap: nowrap;
+    gap: .375rem;
+    @include md{
+      flex-wrap: wrap;
+    }
+  }
+  &__description{
+    background-color: $blue;
+    @include fluid-prop(padding-inline, 1.5,6.75 );
+    @include fluid-prop(padding-block, 1.5,5.063 );
+    font-size: 1rem;
+    line-height: 140%;
+    flex-shrink: 0;
+    border: 1px solid $border_color;
+    width: calc(100% / 12 * 6 - 3px);
+    font-weight: 600;
+    border-radius: .375rem;
+    h2{
+      margin-bottom: 1rem;
+      @include fluid-prop(font-size,1.3125,2);
+    }
+    a{
+      margin-top: 1.5rem;
+    }
+    @include md{
+      width: 100%;
+    }
+  }
+  &__list{
+    flex-shrink: 0;
+    display: flex;
+    gap: .875rem;
+    @include fluid-prop(padding-inline, 0.688,2 );
+    @include fluid-prop(padding-block, 1,2.5 );
+    @include fluid-prop(column-gap, .438,.875 );
+    background-color: $cream;
+    border: 1px solid $border_color;
+    width: calc(100% / 12 * 6 - 3px);
+    flex-wrap: wrap;
+    border-radius: .375rem;
+    justify-content: space-between;
+    @include md{
+      width: 100%;
+    }
+  }
+  &__item{
+    width: calc(100% / 12 * 3 - 12.5px);
+    @include sm{
+      width: calc(100% / 12 * 3 - 7.2px);
+    }
+    img{
+      object-fit: contain;
+    }
+  }
+}

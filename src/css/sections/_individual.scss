@@ -1,0 +1,43 @@
+.individual{
+  &__list{
+    display: flex;
+    gap: .38rem;
+    width: 100%;
+    margin-top: 2.25rem;
+    flex-wrap: wrap;
+  }
+  &-item{
+    min-height: unset;
+    width: calc(20% - 0.31rem);
+    cursor: auto;
+    gap: 0;
+    .services__item__icons{
+      @include fluid-prop(margin-bottom,.88,1.5);
+    }
+    span{
+      color: $grafite;
+      @include fluid-prop(font-size,1,1.25);
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%;
+      &+span{
+        font-size: 1rem;
+        margin-top: .5rem;
+        font-weight: 500;
+      }
+    }
+    @include md{
+      width: calc(100% / 12  * 6 - .31rem);
+    }
+    &:hover{
+      span{
+        color: $grafite;
+      }
+    }
+    &.card--full{
+      @include md{
+        width: 100%;
+      }
+    }
+  }
+}

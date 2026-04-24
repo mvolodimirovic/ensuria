@@ -1,0 +1,75 @@
+$xl: 1919;
+$lg: 1200;
+$md: 1023;
+$sm: 767;
+$xs: 575;
+
+@mixin width($width) {
+  @media (max-width: $width + "px") {
+    @content;
+  }
+}
+
+@mixin fluid-font($min, $max, $min-vw: 767, $max-vw: 1500) {
+  font-size: clamp(
+    #{$min}px,
+    calc(#{$min}px + (#{$max} - #{$min}) * ((100vw - #{$min-vw}px) / (#{$max-vw} - #{$min-vw}))),
+    #{$max}px
+  );
+}
+
+@function fluid($min, $max, $min-vw: 767, $max-vw: 1500, $root: 16) {
+  $range:  $max-vw - $min-vw; 
+  $min_px: $min * $root;      
+  $max_px: $max * $root;    
+  $diff_px: $max_px - $min_px;          
+
+  @return clamp(
+    #{$min}rem,
+    calc(
+      #{$min_px}px +
+      #{$diff_px} * ((min(100vw, #{$max-vw}px) - #{$min-vw}px) / #{$range})
+    ),
+    #{$max}rem
+  );
+}
+
+@mixin fluid-prop($prop, $min, $max, $min-vw: 767, $max-vw: 1500) {
+  #{$prop}: fluid($min, $max, $min-vw, $max-vw);
+}
+
+@mixin hmin($h) {
+  @media (min-width: $h + "px") {
+    @content;
+  }
+}
+
+@mixin xl {
+  @include width($xl) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @include width($lg) {
+    @content;
+  }
+}
+
+@mixin md {
+  @include width($md) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @include width($sm) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @include width($xs) {
+    @content;
+  }
+}

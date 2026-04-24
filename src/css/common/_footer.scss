@@ -1,0 +1,219 @@
+.footer {
+  @include fluid-prop(padding-block, 2.25,5.25);
+
+  background-color:$grafite;
+  *{
+    color: $white;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    @include fluid-prop(gap, 2,5);
+    align-items: stretch;
+    flex-wrap: nowrap;
+    @include md{
+      flex-wrap: wrap;
+    }
+  }
+  .footer__logo {
+    display: inline-block;
+    .icon-footer-logo {
+      width:  147px;
+      height: 31px;
+    }
+  }
+  &__description{
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  &__left{
+    display: flex;
+    flex-direction: column;
+    @include fluid-prop(gap,1.5, 2.19);
+    flex: 0 0 290px;
+    .cta__phone-note{
+      font-size: 0.813rem;
+    }
+    .cta__phone{
+      margin: 0px;
+    }
+  }
+  &__right{
+    flex: 0 1 863px;
+    min-width: 0;
+    display: flex;
+    flex-wrap: wrap;
+    @include fluid-prop(gap, 2.5,4.5);
+  }
+  &__column {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex: 1 1 270px;
+    @include xs{
+      order: 0;
+    }
+    &:first-child{
+      flex: 0 1 196px;
+      @include xs{
+        order: 1;
+      }
+    }
+    @include xs{
+      flex: 1 1 350px;
+    }
+    h5 {
+      font-size: 1rem;
+      font-weight: 500;
+      margin-bottom: 1.37rem;
+      line-height: 170%;
+      width: 100%;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        font-size: 1rem;
+        line-height: 170%;
+        margin-bottom: .75rem;
+        &:last-of-type{
+          margin-bottom: 0px;
+        }
+        a {
+          font-size: 1rem;
+          line-height: 170%;
+          text-decoration: none;
+          transition: color .3s ease-out;
+          text-decoration-line: underline;
+          text-decoration-style: solid;
+          text-underline-position: under;
+          &:hover{
+            color: $gold;
+          }
+        }
+      }
+    }
+  }
+  &__addresses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .37rem;
+    .footer__address {
+      flex: 0 1 270px;
+      display: flex;
+      flex-wrap: wrap;
+      font-style: normal;
+      padding: .75rem;
+      background-color: $address_bg;
+      border-radius: .375rem;
+      @include xs{
+        flex-basis: auto;
+      }
+      button{
+        font-size: 1rem;
+        line-height: 140%;
+        display: inline;
+        width: 100%;
+        padding: 0;
+        text-align: left;
+        opacity: 1;
+        transition: opacity .3s ease-out;
+        &:hover{
+          opacity: .8;
+        }
+        &+span{
+          font-size: .875rem;
+          line-height: 140%;
+        }
+      }
+      a{
+        font-size: 0.8125rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+        display: flex;
+        width: 100%;
+        text-decoration-line: underline;
+        text-decoration-style: dotted;
+        text-decoration-skip-ink: auto;
+        text-decoration-thickness: 6.5%;
+        text-underline-offset: 25%;
+        text-underline-position: from-font;
+        transition: color .3s ease-out;
+        &:hover{
+          color: $gold;
+        }
+      }
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    svg{
+      fill: $white;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2.25rem;
+    @include xs{
+      flex-direction: column;
+      align-items: flex-start;
+      order: 2;
+    }
+  }
+
+  &__copyright {
+    font-size: .8125rem;
+    font-weight: 400;
+    line-height: 170%;
+    margin-top: auto;
+    &.copyright-left{
+      @include xs{
+        display: none;
+      }
+    }
+    &.copyright-bottom{
+      display: none;
+      @include xs{
+        display: block;
+      }
+    }
+  }
+
+  &__bottom-nav {
+    .footer__menu {
+      display: flex;
+      @include fluid-prop(gap, .875,2);
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      @include sm{
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
+      li {
+        a {
+          font-size: .875rem;
+          line-height: 170%;
+          text-decoration: none;
+          transition: color .3s ease-out;
+          &:hover{
+            color: $gold;
+          }
+        }
+      }
+    }
+  }
+}

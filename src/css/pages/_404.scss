@@ -1,0 +1,23 @@
+.error-page{
+  display: flex;
+  &__wrapper{
+    flex-direction: column;
+    gap: .625rem;
+    align-items: flex-start;
+    @include fluid-prop(padding-top, 3,6.25);
+    @include fluid-prop(padding-bottom, 1.5,3);
+    h1{
+      @include fluid-prop(font-size, 2, 3.375);
+    }
+    a{
+      display: flex;
+      @include fluid-prop(margin-top, 1,2);
+      padding-inline: 4.22rem;
+      justify-content: center;
+      min-width: 222px;
+      @include xs{
+        width: 100%;
+      }
+    }
+  }
+}

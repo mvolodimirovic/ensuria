@@ -1,0 +1,72 @@
+.certificate, .article-content .certificate{
+  &__title{
+    margin: 0;
+  }
+  &__subtitle{
+    margin-top: .875rem;
+  }
+  &__wrapper{
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__slider{
+    width: 100%; 
+    overflow: hidden;
+    display: flex;
+    gap: .375rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    @include sm{
+      overflow: visible;
+    } 
+    &.has-subtitle{
+      @include fluid-prop(margin-top, 1.5,2.75 );
+    }
+  }
+  &__item{
+    border-radius: .375rem;
+    overflow: hidden;
+    cursor: pointer;
+    width: calc(100% / 12 * 2 - .375rem);
+    @include sm{
+      width: 100%;
+    }
+    &__img{
+      aspect-ratio: 1/1.45;
+      overflow: hidden;
+      cursor: pointer;
+      @include sm{
+        aspect-ratio: 1/1.25;
+      }
+      img{
+        transition: transform .3s ease-out;
+      }
+    }
+    &:hover{
+      .certificate__item__img{
+        img{
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  &__pagination{
+    top: 60%;
+    @include sm{
+      display: none;
+    }
+  }
+  &__list{
+    display: flex;
+    gap: .675rem;
+    flex-wrap: wrap;
+    width: 100%;
+    @include fluid-prop(margin-bottom, 1.5,2.75 );
+  }
+  &-progress{
+    margin-top: 1.5rem;
+    &.has-subtitle{
+      @include fluid-prop(margin-top, 1.5,2.75 );
+    }
+  }
+}

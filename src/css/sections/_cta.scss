@@ -1,0 +1,233 @@
+.cta {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 2.345fr 1fr;
+    gap: .438rem;
+    align-items: start;
+    @include md{
+      grid-template-columns: 1fr;
+    }
+  }
+  &__left{
+    background-color: $light_bg;
+    @include fluid-prop(padding-block, 1.5,2.25);
+    @include fluid-prop(padding-inline, 1,2.25);
+    @include fluid-prop(gap, 1.5,3.62);
+    display: flex;
+    border-radius: .375rem;
+    align-items: center;
+    @include sm{
+      flex-wrap: wrap;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__media {
+    margin: 0;
+    border-radius: .375rem;
+    overflow: hidden;
+    max-width: 245px;
+    aspect-ratio: 1/.64;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    @include xs{
+      max-width: calc(100vw - 2rem);
+      margin-top: -1.5rem;
+      margin-inline: -1rem;
+      width: 100vw;
+      border-radius: .375rem .375rem 0 0;
+    }
+  }
+
+  h3{
+    margin-bottom: .75rem;
+    width: 100%;
+  }
+
+  &__desc {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+    @include xs{
+      font-size: .875rem;
+    }
+  }
+
+  &__form {
+    max-width: 303px;
+    flex-shrink: 0;
+    @include sm{
+      max-width: 100%;
+      width: 100%;
+    }
+    p{
+      text-align: center;
+      font-weight: 600;
+      font-size: .875rem;
+      line-height: 140%;
+      color: $grafite;
+      margin: 0 auto;
+    }
+  }
+
+  .privacy-policy{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    justify-content: center;
+  }
+  &__middle{
+    display: flex;
+    flex-direction: column;
+    .page-header__appointment &{
+      height: 100%; 
+    }
+  }
+  &__email{
+    color: #FFF;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 170%;
+    transition: color .3s ease-out;
+    &.sub-email{
+      @include sm{
+        font-size: 1.25rem;
+      }
+    }
+    &:hover{
+      color: $ironside;
+    }
+  }
+  &__support {
+    background: $grafite;
+    border-radius: .375rem;
+    @include fluid-prop(padding-block, 1.5,2.25);
+    @include fluid-prop(padding-inline, 1,2.25);
+    display: flex;
+    gap: .5rem;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    *{
+      color: $light_bg;
+    }
+  }
+
+  &__support-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem;
+    .icon-wrapper{
+      width: 12px;
+      height: 12px;
+    }
+    @include sm{
+      margin-bottom: 1.35rem;
+    }
+  }
+
+  &__support-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    @include xs{
+      font-size: 1.125rem;
+    }
+  }
+
+  &__phone {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 140%;
+    text-decoration: none;
+    margin-bottom: .25rem;
+    transition: color .3s ease-out;
+    &:hover{
+      color: $ironside;
+    }
+    .page-header__appointment & {
+      display: flex;
+      flex-direction: column;
+      font-size: 1rem;
+      margin-top: auto;
+    }
+  }
+
+  &__phone-note {
+    font-size: 1rem;
+  }
+  &__middle-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 140%; 
+    margin-bottom: .88rem;
+  }
+  &__socials {
+    display: flex;
+    gap: .75rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 1.375rem;
+    .icon-wrapper{
+      width: 22px;
+      height: 22px;
+      svg{
+        fill: $white;
+      }
+    }
+  }
+  &-specialoffers{
+    background-color: $light_bg;
+    @include fluid-prop(padding-block, 1,1.37);
+    &__wrapper{
+      @include fluid-prop(gap, 1.62,2);
+      align-items: center;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      @include sm{
+        flex-direction: column;
+      }
+    }
+    &__info{
+      max-width: 550px;
+      width: 100%;
+    }
+    &-img{
+      width: 100%;
+      aspect-ratio: 214 / 129;
+      border-radius: 0.4375rem;
+      max-width: 428px;
+      overflow: hidden;
+      @include md{
+        flex-shrink: 0.6;
+      }
+    }
+    &-description{
+      margin-top: 1rem;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 150%;
+    }
+    &__buttons{
+      display: flex;
+      gap: 1rem;
+      margin-top: 1.5rem;
+      @include sm{
+        flex-wrap: wrap;
+      }
+      .btn{
+        text-align: center;
+        justify-content: center;
+        @include sm{
+          flex: 1 0 auto;
+        }
+      }
+    }
+  }
+}

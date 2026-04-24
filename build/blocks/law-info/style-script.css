@@ -1,0 +1,86 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/@wordpress/scripts/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/law-info/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+.law__wrapper-block {
+  padding: 0 !important;
+}
+
+.law__title, .article-content .law__title {
+  margin-bottom: 1.5rem;
+}
+
+.law__list, .article-content .law__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: table;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 100%;
+  border-collapse: collapse;
+}
+
+@media (max-width: 767px) {
+  .law__list, .article-content .law__list {
+    display: block;
+    width: 100%;
+  }
+}
+
+.law__list__item, .article-content .law__list__item {
+  margin: 0;
+  border-bottom: 1px solid #DBEAFF;
+  display: table-row;
+}
+
+@media (max-width: 767px) {
+  .law__list__item, .article-content .law__list__item {
+    display: block;
+    padding: 0;
+  }
+}
+
+.law__list__item::before, .article-content .law__list__item::before {
+  content: none;
+}
+
+.law__list__item span, .article-content .law__list__item span {
+  color: #242529;
+  display: table-cell;
+  vertical-align: top;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 140%;
+  white-space: nowrap;
+  padding-right: 1.5rem;
+  padding-block: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .law__list__item span, .article-content .law__list__item span {
+    font-size: 0.875rem;
+    padding-right: 0;
+    padding-bottom: 0.875rem;
+    display: block;
+    white-space: initial;
+    padding-bottom: 0.4rem;
+  }
+}
+
+.law__list__item span + span, .article-content .law__list__item span + span {
+  color: #242529;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .law__list__item span + span, .article-content .law__list__item span + span {
+    padding-top: 0px;
+    white-space: wrap;
+    padding-bottom: 0.875rem;
+  }
+}
+
+/*# sourceMappingURL=style-script.css.map*/

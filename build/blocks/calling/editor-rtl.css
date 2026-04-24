@@ -1,0 +1,76 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/@wordpress/scripts/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/calling/editor.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+.calling__info, .article-content .calling__info {
+  display: flex;
+  align-items: stretch;
+  gap: 0.375rem;
+  width: 100%;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+.calling__item, .article-content .calling__item {
+  display: flex;
+  max-width: 500px;
+  width: calc(25% - 4.5px);
+  padding: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 0.375rem;
+  background: #F5F6F7;
+  justify-content: space-between;
+}
+@media (max-width: 1023px) {
+  .calling__item, .article-content .calling__item {
+    width: calc(50% - 3px);
+  }
+}
+@media (max-width: 575px) {
+  .calling__item, .article-content .calling__item {
+    width: 100%;
+  }
+}
+.calling__item-title, .article-content .calling__item-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 140%;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.38rem;
+}
+.calling__item-title .icon-phone, .article-content .calling__item-title .icon-phone {
+  width: 20px;
+  height: 12px;
+}
+.calling__item-phone, .article-content .calling__item-phone {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 140%;
+  margin-top: auto;
+}
+.calling__item-phone.email-copy, .article-content .calling__item-phone.email-copy {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0;
+  color: #242529;
+  transition: color 0.3s ease-out;
+  font-weight: 600;
+}
+.calling__item-phone.email-copy .icon-copy, .article-content .calling__item-phone.email-copy .icon-copy {
+  width: 20px;
+  height: 20px;
+}
+.calling__item-phone.email-copy .icon-copy svg, .article-content .calling__item-phone.email-copy .icon-copy svg {
+  stroke: #242529;
+  transition: stroke 0.3s ease-out;
+}
+.calling__item-subtext, .article-content .calling__item-subtext {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 140%;
+}

@@ -1,0 +1,67 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/@wordpress/scripts/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/button-modal/editor.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************/
+.btn {
+  white-space: nowrap;
+  border-radius: 50vh;
+  font-weight: 600 !important;
+  transition: color 0.3s ease-out, background-color 0.3s ease-out;
+  text-align: center;
+  min-width: 160px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.btn--icon {
+  padding: 0.69rem 1.37rem 0.69rem 0.75rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.62rem;
+}
+.btn--icon .icon-wrapper {
+  padding: 0.625rem;
+}
+.btn--icon.btn--dark .icon-arrow-right, .btn--icon.btn--blue-sky .icon-arrow-right, .btn--icon.btn--purple .icon-arrow-right {
+  background-color: #ffffff;
+}
+.btn.btn--large {
+  font-size: 1rem;
+  padding: 1.19rem 1.38rem;
+}
+.btn.btn--middle {
+  font-size: 0.875rem;
+  padding: 1rem 1.25rem;
+}
+.btn.btn--small {
+  font-size: 0.815rem;
+  padding: 0.75rem 1rem;
+}
+.btn.btn--white {
+  background-color: #ffffff;
+  color: #242529;
+}
+.btn.btn--white .icon-wrapper {
+  background-color: #DBEAFF;
+}
+.btn.btn--dark {
+  background-color: #242529;
+  color: #ffffff;
+}
+.btn.btn--blue-sky {
+  background-color: #DBEAFF;
+  color: #242529;
+}
+.btn:hover {
+  background-color: #525356;
+  color: #ffffff;
+}
+.btn:hover * {
+  color: #ffffff;
+}
+.btn:hover .icon-wrapper {
+  background-color: #D9D9D9;
+}
+.btn:hover .icon-wrapper svg {
+  fill: #525356;
+}

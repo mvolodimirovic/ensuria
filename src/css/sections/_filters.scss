@@ -1,0 +1,178 @@
+.filters{
+  width: 100%;
+  margin-top: 3.75rem;
+  margin-bottom: 1.5rem;
+  &__wrapper{
+    gap: .438rem;
+  }
+  &__list{
+    max-height: 0px;
+    transition: max-height 0.5s ease-out;
+    position: absolute;
+    top: 110%;
+    overflow: hidden;
+    width: 100%;
+    z-index: 5;
+    border-radius: .5rem;
+    background-color: $light_bg;
+    &-inner{
+      padding: 1rem;
+      height: 100%;
+    }
+    &-wrap{
+      display: flex;
+      flex-wrap: wrap;
+      overflow: auto;
+      list-style: none;
+      max-height: 227px;
+      height: fit-content;
+      &::-webkit-scrollbar-track {
+      background-color: $line_bg;
+      }
+
+      &::-webkit-scrollbar {
+        width: 2px;
+        background-color: $line_bg;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: $grafite;
+      }
+    }
+    .single{
+      &.selected{
+        pointer-events: none;
+      }
+    }
+    &__item{
+      width: 100%;
+      padding: 1rem 0rem 1rem 1rem;
+      margin-right: 1rem;
+      transition: background-color .3s ease-out;
+      border-radius: .375rem;
+      cursor: pointer;
+      span{
+        cursor: pointer;
+        width: 100%;
+        display: flex;
+        column-gap: .625rem;
+        color: $grafite;
+        font-size: .875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        cursor: pointer;
+        display: flex;
+        align-items: flex-start;
+        column-gap: .625rem;
+      } 
+      .icon-wrapper{
+        background-color: $blue_sky;
+        border-radius: .188rem;
+        width: 22px;
+        height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &.icon-location{
+          border-radius: 50%;
+        }
+        img{
+          object-fit: contain;
+        }
+      }
+      &.selected{
+        span{
+          color: $grafite;
+          position: relative;
+          &:not(.icon-wrapper){
+            &::after {
+              content: "";
+              position: absolute;
+              right: 7px;
+              display: flex;
+              position: absolute;
+              top: 0%;
+              width: 11px;
+              height: 8px;
+              border-left: 2px solid $grafite;
+              border-bottom: 2px solid $grafite;
+              transform: rotate(-45deg) scale(0.9);
+            }
+          }
+        }
+      } 
+      &:hover,&:active{
+        background-color: $white;
+      }         
+    }
+  }
+  &-group{
+    position: relative;
+    @include sm{
+      width: 100%;
+    }
+  }
+  &-choice{
+    display: flex;
+    min-width: 332px;
+    padding: 1.031rem 1rem;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: .75rem;
+    border: 1px solid $border_input;
+    transition: border 0.3s, color 0.3s ease-out;
+    color: $grafite;
+    font-size: .875rem;
+    font-style: normal;
+    font-weight: 400;
+    gap: .8rem;
+    @include xs{
+      min-width: unset;
+      width: 100%;
+    }
+    &-title{
+      pointer-events: none;
+      position: relative;
+      line-height: 140%;
+      &::first-letter{
+        text-transform: uppercase;
+      }
+    }
+    .icon-wrapper{
+      height: 24px;
+      width: 24px;
+      background-color: $blue_sky;
+      .specialized &{
+        border-radius: 0.1875rem;
+      }
+    }
+    .arrow-filter{
+      width: 7px;
+      height: 4px;
+      margin-left: auto;
+      transition: transform 150ms ease-out;
+      padding: 0;
+      background-color: transparent;
+    }
+    &.active{
+      & + .filters__list {
+        max-height: 275px; 
+      }
+      .arrow-filter{
+        transform: rotate(180deg);
+      }
+    }
+    &:hover{
+      color: $ironside;
+      border: 1px solid $ironside;
+      svg{
+        fill: $ironside;
+      }
+    }
+    @include sm{
+      width: 100%;
+    }
+
+  }
+}

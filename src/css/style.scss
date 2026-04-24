@@ -1,0 +1,57 @@
+/*
+Theme Name: Ensuria Theme
+Theme URI: https://ensuria.ua/
+Author: Ensuria
+Author URI: https://ensuria.ua/
+Description: Theme Ensuria
+Version: 1.0.0
+*/
+ 
+//normalize
+@import "helpers/normalize";
+
+//helpers
+@import "helpers/variables"; 
+@import "helpers/fonts"; 
+@import "helpers/mixins";
+@import "helpers/binotel";
+
+//common
+@import "common/common";
+@import "common/header"; 
+@import "common/footer";
+@import "common/modal";
+@import "common/wordpress";
+
+//pages
+@import "pages/home";
+@import "pages/404";
+@import "pages/single";
+@import "pages/contact";
+@import "pages/single-team";
+
+
+// content in single page
+@import "common/content";
+// sections
+@import "sections/hero";
+@import "sections/appointment";
+@import "sections/specialoffers";
+@import "sections/services";
+@import "sections/team";
+@import "sections/partners";
+@import "sections/reviews";
+@import "sections/consultation";
+@import "sections/blog";
+@import "sections/cta";
+@import "sections/seo";
+@import "sections/page-header";
+@import "sections/filters";
+@import "sections/faq";
+@import "sections/clinic";
+@import "sections/disclaimer";
+@import "sections/equipment";
+@import "sections/planning";
+@import "sections/individual";
+@import "sections/communication";
+@import "sections/certificate";

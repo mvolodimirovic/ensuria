@@ -1,0 +1,37 @@
+.disclaimer{
+  background-color: $creame;
+  @include fluid-prop(padding-block,1.88,2.5);
+  h5{
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; 
+    text-transform: uppercase;
+    @include fluid-prop(margin-bottom,1,1.56);
+  }
+  &__list{
+    display: flex;
+    align-items: center;
+    @include fluid-prop(gap,1,7);
+    @include md{
+      flex-wrap: wrap;
+    }
+  } 
+  &__item{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    min-width: 210px;
+    h6{
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 210%;
+      margin-bottom: .875rem;
+    }
+    span,time{
+      font-size: .875rem;
+      font-weight: 500;
+      line-height: 210%;
+    }
+  }
+}

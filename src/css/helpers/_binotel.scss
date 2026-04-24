@@ -1,0 +1,22 @@
+
+body #bingc-phone-button svg.bingc-phone-button-circle circle.bingc-phone-button-circle-inside{
+    fill: $green_dark!important;
+}
+body #bingc-phone-button svg.bingc-phone-button-circle circle.bingc-phone-button-circle-outside{
+    fill: $green_dark!important;
+}
+body #bingc-phone-button div.bingc-phone-button-tooltip{
+	background-color: $green_dark!important;
+}
+body #bingc-phone-button div.bingc-phone-button-tooltip svg.bingc-phone-button-arrow polyline{
+	fill: $green_dark!important;
+}
+body #bingc-phone-button:hover svg.bingc-phone-button-circle circle.bingc-phone-button-circle-inside{
+	fill: $green_middle!important;
+}
+body #bingc-passive div.bingc-passive-overlay div.bingc-passive-content div.bingc-passive-get-phone-form form.bingc-passive-get-phone-form a.bingc-passive-phone-form-button, body #bingc-passive div.bingc-passive-overlay div.bingc-passive-content div.bingc-passive-get-phone-form form.bingc-passive-get-phone-form div.bingc-passive-get-phone-form-date-selection div.bingc-passive-date-selection-select-hour, body #bingc-passive div.bingc-passive-overlay div.bingc-passive-content div.bingc-passive-get-phone-form form.bingc-passive-get-phone-form div.bingc-passive-get-phone-form-date-selection div.bingc-passive-date-selection-select-minutes, body #bingc-active div.bingc-active-overlay div.bingc-active-content div.bingc-active-get-phone-form form.bingc-active-get-phone-form a.bingc-active-phone-form-button{
+	background-color: $green_dark!important;
+}
+body #bingc-active div.bingc-active-overlay div.bingc-active-content div.bingc-active-get-phone-form form.bingc-active-get-phone-form a.bingc-active-phone-form-button{
+	background-color: $green_middle!important;
+}

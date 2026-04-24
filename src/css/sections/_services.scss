@@ -1,0 +1,177 @@
+.services{
+  background-color: $light_bg;
+  @include fluid-prop(padding-block, 2,4.063 );
+  &.white-section{
+    background-color: $white;
+  }
+  &__header{
+    width: 100%;
+  }
+  &__title{
+    margin-bottom: 0!important;
+  }
+  &__subtitle{
+    margin-top: .875rem;
+    @include fluid-prop(font-size, 1,1.125 );
+    line-height: 150%;
+  }
+  &__list{
+    width: 100%;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .375rem;
+    align-items: stretch;
+    .white-section &{
+      margin-top: 0px;
+    }
+    &.has-subtitle{
+      @include fluid-prop(margin-top, 1.5,2.75 );
+    }
+  }
+  &__item{
+    position: relative;
+    @include fluid-prop(padding, 1,1.5 );
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $white;
+    border-radius: .375rem;
+    overflow: hidden;
+    width: calc(100% / 12  * 3 - 4.5px);
+    min-height: 202px;
+    align-items: flex-start;
+    cursor: pointer;
+    .white-section &{
+      background-color: $light_bg;
+    }
+    @include md{
+      width: calc(100% / 12  * 6 - 3px);
+    }
+    @include sm{
+      min-height: 0;
+    }
+    @include xs{
+      width: 100%;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+    }
+    &__icons{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      @include sm{
+        margin-bottom: .88rem;
+      }
+      @include xs{
+        margin-bottom: 0;
+        width: auto;
+      }
+      .icon-wrapper:not(.icon-arrow-right){
+        background-color: $blue_sky;
+        border-radius: .375rem;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+          object-fit: contain;
+        }
+        @include xs{
+          width: 34px;
+          height: 34px;
+        }
+      }
+      .icon-arrow-right{
+        margin-left: auto;
+        background-color: $arrows_bg;
+        border-radius: 50%;
+        padding: .625rem;
+        transition: background-color .3s ease-out;
+        @include xs{
+          display: none;
+        }
+        .white-section &{
+          background-color: $white;
+        }
+        svg{
+          transition: fill .3s ease-out;
+        }
+      }
+    }
+    &__content{
+      h4{
+        width: 100%;
+        margin-top: auto;
+        font-weight: 600;
+        @include fluid-prop(font-size, 1,1.375 );
+        line-height: 120%;
+        transition: color .3s ease-out;
+        &+span{
+          margin-top: 0.25rem;
+          @include fluid-prop(font-size, .875,1);
+          line-height: 130%;
+          transition: color .3s ease-out;
+          display: block;
+        }
+      }
+    }
+    &:hover{
+      h4,span{
+        color: $ironside;    
+      }
+      .icon-arrow-right{
+        background-color: $bg_hover;
+        svg{
+          fill: $white;
+        }
+      }
+    }
+  }
+}
+
+.service-head{
+  background-color: $light_bg;
+  @include fluid-prop(padding-block, 1,1.37);
+  &__wrapper{
+    @include fluid-prop(gap, 1.62,2);
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    @include sm{
+      flex-direction: column;
+    }
+  }
+  &__info{
+    max-width: 550px;
+    width: 100%;
+  }
+  &-img{
+    width: 100%;
+    aspect-ratio: 214 / 129;
+    border-radius: 0.4375rem;
+    max-width: 642px;
+    overflow: hidden;
+    @include md{
+      flex-shrink: 0.6;
+    }
+  }
+  &-description{
+    @include fluid-prop(margin-top, 1,1.5 );
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  &__btn{
+    margin-top: 1.5rem;
+  }
+}
+
+.single-services{
+  .seo__content{
+    max-width: 1000px;
+  }
+}

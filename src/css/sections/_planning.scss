@@ -1,0 +1,50 @@
+.planning{
+  &__list{
+    display: flex;
+    gap: .38rem;
+    width: 100%;
+    @include fluid-prop(margin-top, 1.5,2.25);
+    flex-wrap: wrap;
+  }
+  &__item{
+    position: relative;
+    padding:1.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: $light_bg;
+    overflow: hidden;
+    width: calc(33.333333% - 4.5px);
+    align-items: flex-start;
+    border-radius: .375rem;
+    overflow: hidden;
+    @include sm{
+      width: 100%;
+    }
+    &-image{
+      position: relative;
+      padding-top: 67.5%;
+      width: 100%;
+      border-radius: .375rem;
+      overflow: hidden;
+      @include sm{
+        padding-top: 81%;
+      }
+      img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+    }
+    h5{
+      margin-top: 1.5rem;
+      margin-bottom: auto;
+    }
+    p{
+      @include fluid-prop(font-size,.875,1);
+      font-weight: 500;
+      line-height: 140%; 
+      margin-top: .875rem;
+    }
+  }
+}

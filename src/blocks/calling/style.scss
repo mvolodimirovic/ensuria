@@ -1,0 +1,52 @@
+.calling, .article-content .calling{
+  .wrapper{
+    padding: 0;
+  }
+  &__header{
+    margin-bottom: 1.5rem;
+    width: 100%;
+    p{
+      font-weight: 600;
+      font-size: 1.25rem;
+      @media (max-width:767px) {
+        font-size: 1rem;
+      }
+    }
+  }
+  &__info{
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    flex-wrap: wrap;
+    max-width: 500px;
+    width: 100%;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 0.375rem;
+    background-color: #F5F6F7;
+    justify-content: space-between;
+  }
+  &__item{
+  display: flex;
+  column-gap: 12px;
+  align-items: baseline;
+    .day,.workerhours{
+      min-width: 72px;
+      font-size: 1rem;
+    }
+    &-title{
+      font-size: 1.25rem;
+      font-weight: 600;
+      line-height: 140%; 
+      margin-bottom: 1.5rem;
+    }
+  }
+  &__subtext{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 140%;
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+}

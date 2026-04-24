@@ -1,0 +1,49 @@
+{
+  "name": "starter-kit-lite",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "prodwatch": "gulp watch",
+    "devbuild": "gulp --dev",
+    "build": "wp-scripts build",
+    "build:js": "webpack --config webpack.config.js",
+    "watch": "webpack --watch --mode=development --config webpack.config.js",
+    "deploy": "gulp deploy",
+    "format-js": "wp-scripts format ./src",
+    "lint:css": "wp-scripts lint-style ./src",
+    "lint:js": "wp-scripts lint-js ./src",
+    "packages-update": "wp-scripts packages-update",
+    "start": "wp-scripts start --webpack-copy-php"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "@wordpress/scripts": "^31.2.0",
+    "autoprefixer": "^10.4.13",
+    "clean-webpack-plugin": "^4.0.0",
+    "cssnano": "^5.1.14",
+    "fs-extra": "^11.3.1",
+    "glob": "^11.0.3",
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "path": "^0.12.7",
+    "postcss": "^8.4.38",
+    "postcss-loader": "^8.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sass": "^1.57.1",
+    "vinyl-ftp": "^0.6.1",
+    "webpack": "^5.101.0",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "swiper": "^11.2.10"
+  },
+  "description": "Developer environment\r https://ensuria.simple-dev.site/",
+  "main": "index.js",
+  "keywords": [],
+  "author": ""
+}

@@ -1,0 +1,94 @@
+.clinic{
+  &__title{
+    margin-bottom: .875rem;
+    h2{
+      margin: 0!important;
+    }
+  }
+  &__wrapper{
+    justify-content: space-between;
+    gap: 0px;
+    &-block{ 
+      padding: 0!important;
+    }
+  }
+  &__slider{
+    width: 100%;
+    overflow: visible;
+    margin-top: 1.5rem!important;
+    overflow: hidden;
+    &.has-subtitle{
+      margin-top:clamp(1.5rem, 24px + 20 * (min(100vw, 1500px) - 767px) / 733, 2.75rem)!important;
+    }
+    &:hover{
+      .clinic__pagination{
+        opacity: 1;
+      }
+    }
+  }
+  &__item{
+    border-radius: .375rem;
+    overflow: hidden;
+    &__img{
+      overflow: hidden;
+      img{
+        transition: transform .3s ease-out;
+        border-radius: .375rem .375rem 0 0!important;
+        width: 100%;
+        aspect-ratio: 464 / 277;
+      }
+    }
+    &:hover{
+      img{
+        transform: scale(1.1);
+      }
+    }
+    &__info{
+      padding: 1.5rem 2.5rem 1.5rem 1.5rem;
+      position: relative;
+      background-color: #F5F6F7;
+      display: flex;
+      gap: 0.375rem;
+      flex-direction: column;
+      .icon-wrapper{ 
+        width: 152px;
+        height: 15px;
+      }
+      h4{
+        transition: color .3s ease-out;
+        margin: 0;
+        font-size: 1.25rem;
+      }
+      .clinic__phone{
+        font-size: .875rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+        position: relative;
+        z-index: 4;
+      }
+      button{
+        margin-top: auto;
+        position: relative;
+        z-index: 4;
+      }
+    }
+  }
+  &-progress{
+    margin-top: 1.5rem;
+    &.has-subtitle{
+      margin-top:clamp(1.5rem, 24px + 20 * (min(100vw, 1500px) - 767px) / 733, 2.75rem);
+    }
+  }
+  &__list{
+    display: flex;
+    gap: .675rem;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+.article-content{
+  .clinic__wrapper{
+    padding: 0!important;
+  }
+}

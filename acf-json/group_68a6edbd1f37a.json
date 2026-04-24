@@ -1,0 +1,65 @@
+{
+    "key": "group_68a6edbd1f37a",
+    "title": "Specialized Category",
+    "fields": [
+        {
+            "key": "field_68a6ed95a1144",
+            "label": "Icon",
+            "name": "icon",
+            "aria-label": "",
+            "type": "icon_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "tabs": [
+                "media_library"
+            ],
+            "return_format": "array",
+            "allow_in_bindings": 0,
+            "library": "all",
+            "default_value": {
+                "type": null,
+                "value": null
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "specialized"
+            }
+        ],
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "reviews-cat"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "display_title": "",
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1763399555
+}
